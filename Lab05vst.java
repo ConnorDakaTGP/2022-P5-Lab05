@@ -17,5 +17,35 @@ public class Lab05vst extends Applet
         int x2 = 990;
         int y2 = 640;
         g.drawRect(10,10,width,height);
+
+        //start of user code
+
+        while (x2>10) {
+            g.drawLine(x1, y1, x2, y2);
+            x2 -= 21;
+            y1 -= 13;
+        }
+        y1 = 640;
+        x2 = 990;
+        while (x1<990) {
+            g.drawLine(x1, y1, x2, y2);
+            x1 += 21;
+            y2 -= 13;
+        }
+        x1 = 10;
+        y1 = 10;
+        y2 = 10;
+        while (x2>10) {
+            g.drawLine(x1, y1, x2, y2);
+            x2 -= 21;
+            y1 += 13;
+        }
+        y1 = 10;
+        x2 = 990;
+        while (x1<990) {
+            g.drawLine(x1, y1, x2, y2);
+            x1 += 21;
+            y2 += 13;
+        }
     }
 }
